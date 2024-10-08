@@ -1,9 +1,9 @@
-/* css3 변수선언 
+/* css3 변수선언 */
 :root {
   --tablet: 999px;
   --mobile: 360px;
 }
-*/
+
 /* reset */
 * {
   margin: 0;
@@ -28,7 +28,7 @@ html {
 /* styling */
 body {
   background-color: #eee;
-  font-family: "Orbitron";
+  font-family: "Open Sans";
 }
 
 article {
@@ -40,6 +40,7 @@ article {
 h1 {
   text-align: left;
   margin: 20px auto;
+  font-size: 1.5rem;
 }
 
 p {
@@ -58,7 +59,8 @@ nav {
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  width: 30vw;
+  width: 100px;
+  height: 100px;
   gap: 20px;
   padding: 0;
 }
@@ -99,6 +101,34 @@ strong {
   align-content: center;
 }
 
+.description h3 {
+  font-size: 1rem;
+}
+
 .description > p {
   margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+/* Responsive styling */
+@media (max-width: var(--tablet)) {
+  li {
+    width: 120px;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: var(--mobile)) {
+  li {
+    width: 100px;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
 }
