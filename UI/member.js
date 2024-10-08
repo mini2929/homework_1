@@ -15,12 +15,12 @@ memberData.forEach((member) => {
   listItem.innerHTML = `
       <ul style="position: relative;">
       <img 
-        style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 5px; left: 5px; filter: blur(10px); opacity: 0.8;" 
+        style="object-fit: cover; position: absolute; top: 5px; left: 5px; filter: blur(10px); opacity: 0.8;" 
         src="/public/${member.pic}" 
         alt="${member.name}'s shadow" 
       />
       <img 
-      style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" 
+      style="object-fit: cover; position: absolute; top: 0; left: 0;" 
       src="/public/${member.pic}" 
       alt="${member.name}" 
       />
