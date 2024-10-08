@@ -14,16 +14,16 @@ memberData.forEach((member) => {
 
   listItem.innerHTML = `
       <ul style="position: relative;">
-        <img 
-          style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 20px; left: 20px; filter: blur(20px); opacity: 0.6;" 
-          src="/public/${member.pic}" 
-          alt="${member.name}'s shadow" 
-        />
-        <img 
-          style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" 
-          src="/public/${member.pic}" 
-          alt="${member.name}" 
-        />
+      <img 
+        style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 5px; left: 5px; filter: blur(10px); opacity: 0.8;" 
+        src="/public/${member.pic}" 
+        alt="${member.name}'s shadow" 
+      />
+      <img 
+      style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" 
+      src="/public/${member.pic}" 
+      alt="${member.name}" 
+      />
         <strong>${member.name}</strong>
         <span class="position">${member.position}</span>
       </ul>
