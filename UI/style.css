@@ -46,8 +46,6 @@ nav {
   justify-content: flex-start;
 }
 nav ul {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   display: flex;
   flex-wrap: wrap;
   width: 50vw;
@@ -83,7 +81,7 @@ strong {
   color: #888;
 }
 
-div.description {
+.description {
   padding: 20px;
   margin-top: 20px;
   max-width: 400px;
