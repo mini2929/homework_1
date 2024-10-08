@@ -1,3 +1,10 @@
+/* css3 변수선언 */
+:root {
+  --tablet: 999px;
+  --mobile: 360px;
+}
+
+/* reset */
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +25,8 @@ html {
   font-size: 16px;
 }
 
+/* styling */
 body {
-  font-family: Arial, sans-serif;
   background-color: #eee;
 }
 
@@ -44,25 +51,24 @@ p {
 nav {
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
   justify-content: flex-start;
+  align-content: space-between;
 }
 nav ul {
   display: flex;
   flex-wrap: wrap;
   width: 30vw;
   gap: 20px;
-  list-style: none;
   padding: 0;
 }
 
 li {
+  width: 150px;
   background: #f9f9f9;
   border-radius: 10px;
   padding: 20px;
   text-align: start;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 150px;
 }
 
 img {
