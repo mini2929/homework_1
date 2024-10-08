@@ -13,7 +13,7 @@ memberData.forEach((member) => {
   const listItem = document.createElement("li");
 
   listItem.innerHTML = `
-    <img src="/public/${member.pic}" alt="${member.name}">
+    <img src="/public/${member.pic}" alt="${member.name}" />
     <strong>${member.name}</strong>
     <span class="position">${member.position}</span>
   `;
