@@ -1,9 +1,9 @@
-/* css3 변수선언 */
+/* css3 변수선언 
 :root {
   --tablet: 999px;
   --mobile: 360px;
 }
-
+*/
 /* reset */
 * {
   margin: 0;
@@ -28,6 +28,7 @@ html {
 /* styling */
 body {
   background-color: #eee;
+  font-family: "Orbitron";
 }
 
 article {
