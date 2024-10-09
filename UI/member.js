@@ -13,21 +13,23 @@ memberData.forEach((member) => {
   const listItem = document.createElement("li");
 
   listItem.innerHTML = `
-      <ul style="position: relative;">
-      <img 
-        style="object-fit: cover; position: absolute; top: 5px; left: 5px; filter: blur(10px); opacity: 0.8;" 
-        src="/public/${member.pic}" 
-        alt="${member.name}'s shadow" 
-      />
-      <img 
-      style="object-fit: cover; position: absolute; top: 0; left: 0;" 
-      src="/public/${member.pic}" 
-      alt="${member.name}" 
-      />
+  <div class="wrapImg" >
+  <img 
+  style="object-fit: cover; position: absolute; top: 5px; left: 5px; filter: blur(10px); opacity: 0.8;" 
+  src="/public/${member.pic}" 
+  alt="${member.name}'s shadow" 
+  />
+  <img 
+  style="object-fit: cover; position: absolute; top: 0; left: 0;" 
+  src="/public/${member.pic}" 
+  alt="${member.name}" 
+  />
+  </div>
+  <div class="wrapText">
         <strong>${member.name}</strong>
         <span class="position">${member.position}</span>
-      </ul>
-    `;
+  </div>
+  `;
 
   teamList.appendChild(listItem);
 });

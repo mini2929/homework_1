@@ -1,9 +1,3 @@
-/* css3 변수선언 */
-:root {
-  --tablet: 999px;
-  --mobile: 360px;
-}
-
 /* reset */
 * {
   margin: 0;
@@ -52,45 +46,53 @@ p {
 
 nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: space-between;
 }
 
-nav > ul {
-  width: 50vw;
+ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: space-between;
+  justify-content: space-between;
+  width: 50vw;
 }
 
 li {
-  width: 30%;
+  width: 200px;
   background: #f9f9f9;
   border-radius: 10px;
   margin: 10px;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
   justify-items: center;
-  text-align: start;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-li > ul {
-  width: 100px;
+.wrapImg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   height: 100px;
-  gap: 20px;
-  padding: 0;
-  justify-items: center;
+  width: 100px;
 }
 
-li > ul > img {
+img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   margin-bottom: 10px;
   object-fit: cover;
   justify-items: center;
+}
+
+.wrapText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
 }
 
 strong {
@@ -123,16 +125,13 @@ strong {
 }
 
 /* Responsive styling */
-@media (max-width: var(--tablet)) {
-}
 
-@media (max-width: var(--mobile)) {
-  li > ul > img {
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    object-fit: cover;
+@media (max-width: 360px) {
+  li > ul {
+    width: 100px;
+    height: 100px;
+    gap: 20px;
+    padding: 0;
     justify-items: center;
   }
 }
